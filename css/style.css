@@ -1,0 +1,33 @@
+div.a {
+    text-align: center;
+}
+.input-group {
+    display: block;
+}
+.container {
+    display: inline;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+label {
+    width:150px;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
+}
+
+input, label {
+    float:left;
+}
+
+#input-group{
+    display: flex;
+    flex-direction: row;
+}

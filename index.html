@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+    <title>Id form validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="a">
+        <h1>Id card validation form</h1>
+    </div>
+    <form novalidate>
+        <div id="input-group">
+            <label for="First name">Firstname</label>
+            <input type="text" id="firstname"><br>
+            <span class="span-for-errors" id="errForFirstName">Please enter your preferred name as first name</span>
+        </div><br><br>
+
+        <div id="input-group">
+            <label for="Full Name">Fullname</label>
+            <input type="text" id="fullname"><br>
+            <span class="span-for-errors" id="errForFullName">Please enter your full name</span>
+        </div><br><br>
+        <div id="input-group">
+            <label for="DOE">DateOfEmp</label>
+            <input id="DOE" type="date">
+            <span class="span-for-errors" id="errForDOE">Please enter valid Date of birth</span>
+        </div><br><br>
+        <div id="input-group">
+                <label for="Reasons for issue">Reason for Issue:</label>
+                <label class="container">New Employee
+                <input type="radio"  id="new" value="new" name="choice">
+                   
+                  </label>
+                <label class="container">Card Lost
+                    <input type="radio" id="lost" value="lost" name="choice">
+                   
+                  </label>
+                <label class="container">Designation Change
+                    <input type="radio" id="changedesi" value="changedid" name="choice"> 
+                   
+                  </label>
+                <label class="container">Defaced
+                    <input type="radio" id="defaced" value="defaced" name="choice" >
+                   
+                  </label>
+                <span class="span-for-errors" id="errForButton">Please select any one button</span>
+            </div><br><br>
+        <div id="input-group">
+            <label for="email">Email</label>
+            <input id="email" type="email">
+            <span class="span-for-errors" id="errForemail">Please enter valid email</span>
+        </div><br><br>
+        <div id="input-group">
+            <label for="mobile">Mobile</label>
+            <input id="mobile" type="number">
+            <span class="span-for-errors" id="errFormobile">Please enter valid Mobile No</span>
+        </div><br><br>
+        <div class="a">
+            <button type="button" onclick="adddata()">Submit</button>
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/app.js "></script>
+</body>
+
+</html>
